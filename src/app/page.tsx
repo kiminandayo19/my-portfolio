@@ -1,0 +1,24 @@
+import { Navbar } from '@/components/organisms/Navbar';
+import { HeroSection } from '@/components/organisms/HeroSection';
+import { ExperienceSection } from '@/components/organisms/ExperienceSection';
+import { ProjectsSection } from '@/components/organisms/ProjectsSection';
+import { SkillsSection } from '@/components/organisms/SkillsSection';
+import { ContactSection } from '@/components/organisms/ContactSection';
+import { Footer } from '@/components/organisms/Footer';
+import * as portfolioService from '@/services/portfolio-service';
+
+export default async function Home() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </>
+  );
+}
